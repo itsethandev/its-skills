@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
 
-Before reading tracker issues or publishing the spec, find and read the project's issue-tracker and implementation-triage guidance through its README documentation index and agent instructions. Follow the configured tracker operations, locations, and role mappings. If required guidance is missing or ambiguous, explain the gap and ask how to proceed; the user can run the setup skill to establish it.
+Before reading tracker issues or publishing the spec, find and read the project's issue-tracker and implementation-triage guidance through its README documentation index and agent instructions. Follow the configured tracker operations, locations, and role mappings. If required guidance is missing or ambiguous, explain the gap and ask how to proceed.
 
 ## Process
 

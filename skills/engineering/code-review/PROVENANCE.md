@@ -1,6 +1,6 @@
 # Provenance: code-review
 
-**Classification: Adapted.** Near-verbatim code-review with the setup reference retargeted.
+**Classification: Adapted.** Near-verbatim code-review with missing-tracker guidance changed.
 
 ## License scope
 
@@ -12,8 +12,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source                                                                                                                                                                        | Evidence and changes                                                      |
-| ---------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
-| `SKILL.md` | Adapted        | [Matt Pocock: `skills/engineering/code-review/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md) | Two-axis review and smell baseline retained; setup invocation retargeted. |
+| Local file | Classification | Pinned source                                                                                                                                                                        | Evidence and changes                                                                                    |
+| ---------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| `SKILL.md` | Adapted        | [Matt Pocock: `skills/engineering/code-review/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md) | Two-axis review and smell baseline retained; missing tracker prompts for the originating issue or spec. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

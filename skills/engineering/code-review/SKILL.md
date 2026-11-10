@@ -10,7 +10,7 @@ Two-axis review of the diff between `HEAD` and a fixed point the user supplies:
 
 Both axes run as **parallel sub-agents** so they don't pollute each other's context, then this skill aggregates their findings.
 
-The issue tracker should have been provided to you. If not, tell the user to run the setup skill.
+The issue tracker should have been provided to you. If not, ask where the originating issue or spec lives.
 
 ## Process
 

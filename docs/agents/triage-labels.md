@@ -14,8 +14,7 @@ Wayfinder maps and decision tickets use only `wayfinder:` labels, not these
 implementation labels. Their lifecycle is defined in
 [Issue tracker](issue-tracker.md#wayfinding-operations).
 
-These are the agreed label names. Setup does not create remote labels or verify
-whether they already exist.
+These are the agreed label names.
 
 ## Maintenance
 

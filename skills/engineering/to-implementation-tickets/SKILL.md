@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Break a plan, spec, or conversation into a set of **implementation tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
-Before reading tracker issues or publishing tickets, find and read the project's issue-tracker and implementation-triage guidance through its README documentation index and agent instructions. Follow the configured tracker operations, locations, and role mappings. If required guidance is missing or ambiguous, explain the gap and ask how to proceed; the user can run the setup skill to establish it.
+Before reading tracker issues or publishing tickets, find and read the project's issue-tracker and implementation-triage guidance through its README documentation index and agent instructions. Follow the configured tracker operations, locations, and role mappings. If required guidance is missing or ambiguous, explain the gap and ask how to proceed.
 
 ## Process
 
