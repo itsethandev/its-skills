@@ -14,7 +14,7 @@ A skill's instructions together with its supporting resources, provenance,
 and license notices.
 
 **Task domain**:
-The kind of work a skill supports, such as software engineering or learning.
+The kind of work a skill supports, such as software engineering.
 Cross-domain skills support work across multiple task domains.
 
 ## Work products
@@ -59,20 +59,3 @@ Its implementation tickets deliver and verify parts of that change.
 
 **Implementation ticket**:
 A ticket whose completion delivers and verifies a bounded part of a specified change.
-
-## Learning
-
-**Learning objective**:
-What the learner wants to understand or be able to do.
-
-**Learning map**:
-A plan for achieving a learning objective through learning activities.
-It adapts until the learner confirms that their objective has been achieved.
-
-**Learning ticket**:
-A ticket describing and tracking a learning activity that advances a learning objective.
-Completing the ticket does not by itself establish achievement of the objective.
-
-**Learning activity**:
-Something the learner performs to advance their learning objective,
-optionally with agent assistance.
