@@ -116,6 +116,7 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 - [Quickstart](docs/quickstart.md): prerequisites and local verification.
 - [Guiding Principles](PRINCIPLES.md): guiding qualities for project work.
 - [Glossary](GLOSSARY.md): agreed project terms.
+- [Action permission storage decision](docs/adr/0001-checkout-local-action-permissions.md): rationale and trade-offs for checkout-local permission records.
 
 ## Agent documentation
 
