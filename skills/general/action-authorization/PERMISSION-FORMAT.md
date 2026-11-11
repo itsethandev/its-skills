@@ -1,6 +1,6 @@
 # Permission file format
 
-The project permission file contains active project-specific denials and standing permissions. Leave defaults in the skill and temporary grants in the conversation.
+The permission file contains the developer's current project-specific denials and standing permissions. Leave defaults in the skill and temporary grants in the conversation.
 
 ## Record format
 
@@ -32,6 +32,6 @@ Illustrative only; record only scopes the user actually approved.
 
 ## Update active records
 
-Preserve unrelated decisions. For an explicitly revised or revoked decision, update or remove its record; keep proposals and superseded text outside active records. Version control preserves history.
+Preserve unrelated decisions. For an explicitly revised or revoked decision, update or remove its record. Keep only current decisions in the file, without proposals or historical entries.
 
-Recording a decision does not authorize pushing the file. If persistence fails, report it; the decision still applies in the current session, but do not claim it will survive that session.
+If persistence fails, report it; the decision still applies in the current session, but do not claim it will survive that session.
