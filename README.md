@@ -26,7 +26,7 @@ Skills are divided into model invoked skills and manually invoked skills. The mo
 | [propose-first](skills/propose-first/SKILL.md)               | Propose a solution and wait for approval before implementing.                     |
 | [prototype](skills/prototype/SKILL.md)                       | Build a throwaway artifact to answer a design question.                           |
 | [repitch](skills/repitch/SKILL.md)                           | Re-explain a message or part of one.                                              |
-| [research](skills/research/SKILL.md)                         | Investigate primary sources and save findings as Markdown in the repo.            |
+| [research](skills/research/SKILL.md)                         | Produce a cited research report from primary sources.                             |
 | [tdd](skills/tdd/SKILL.md)                                   | Build features or fix bugs with test-driven development.                          |
 | [verifying-work](skills/verifying-work/SKILL.md)             | Prove results, establish feedback loops, and maintain verification guidance.      |
 | [wizard](skills/wizard/SKILL.md)                             | Generate an interactive Bash wizard for steps only a human can perform.           |
