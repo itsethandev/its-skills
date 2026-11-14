@@ -1,6 +1,6 @@
-# Provenance: to-implementation-tickets
+# Provenance: to-tickets
 
-**Classification: Adapted.** to-tickets renamed and adapted to configured tracker conventions.
+**Classification: Adapted.** to-tickets adapted to configured tracker conventions.
 
 ## License scope
 
