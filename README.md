@@ -6,60 +6,46 @@ ItsSkills is an collection of reusable agent skills for general work, software e
 
 Use these identifiers with `--skill` when installing individual skills. Each link opens the skill's instructions. Invocation metadata support depends on the consuming agent.
 
-Skills live under `skills/<task-domain>/<skill>/` classified by purpose, not by implementation tools or occasional reuse. Each skill has one canonical home. Workflows in other domains can use it without copying it.
+Each skill bundle lives under `skills/<skill>/`. Choose skills by their purpose and invocation conditions.
 
 Skills are divided into model invoked skills and manually invoked skills. The model can load model invoked skills when their invocation conditions match the task, while manually invoked skills must be explicitly invoked by the user.
 
-### General
+### Model invoked
 
-#### Model invoked
+| Skill                                                        | Purpose                                                                           |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| [action-authorization](skills/action-authorization/SKILL.md) | Resolve permission for consequential actions and record scoped grants or denials. |
+| [alignment](skills/alignment/SKILL.md)                       | Stress-test a plan, decision, or idea with the user.                              |
+| [code-review](skills/code-review/SKILL.md)                   | Review changes against repository standards and the originating spec in parallel. |
+| [codebase-design](skills/codebase-design/SKILL.md)           | Design deeper modules, clearer interfaces, and testable boundaries.               |
+| [decision-records](skills/decision-records/SKILL.md)         | Record consequential decisions as lightweight ADRs.                               |
+| [diagnosing-bugs](skills/diagnosing-bugs/SKILL.md)           | Diagnose bugs and performance regressions.                                        |
+| [domain-language](skills/domain-language/SKILL.md)           | Build and sharpen a project's domain language and glossary.                       |
+| [frontend-design](skills/frontend-design/SKILL.md)           | Design or reshape frontend pages, components, and interactive prototypes.         |
+| [pr](skills/pr/SKILL.md)                                     | Write a pull request body.                                                        |
+| [propose-first](skills/propose-first/SKILL.md)               | Propose a solution and wait for approval before implementing.                     |
+| [prototype](skills/prototype/SKILL.md)                       | Build a throwaway artifact to answer a design question.                           |
+| [repitch](skills/repitch/SKILL.md)                           | Re-explain a message or part of one.                                              |
+| [research](skills/research/SKILL.md)                         | Investigate primary sources and save findings as Markdown in the repo.            |
+| [tdd](skills/tdd/SKILL.md)                                   | Build features or fix bugs with test-driven development.                          |
+| [verifying-work](skills/verifying-work/SKILL.md)             | Prove results, establish feedback loops, and maintain verification guidance.      |
+| [wizard](skills/wizard/SKILL.md)                             | Generate an interactive Bash wizard for steps only a human can perform.           |
+| [writing](skills/writing/SKILL.md)                           | Write and revise technical prose for humans and coding agents.                    |
 
-| Skill                                                                | Purpose                                                                           |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [action-authorization](skills/general/action-authorization/SKILL.md) | Resolve permission for consequential actions and record scoped grants or denials. |
-| [alignment](skills/general/alignment/SKILL.md)                       | Stress-test a plan, decision, or idea with the user.                              |
-| [decision-records](skills/general/decision-records/SKILL.md)         | Record consequential decisions as lightweight ADRs.                               |
-| [domain-language](skills/general/domain-language/SKILL.md)           | Build and sharpen a project's domain language and glossary.                       |
-| [pr](skills/general/pr/SKILL.md)                                     | Write a pull request body.                                                        |
-| [propose-first](skills/general/propose-first/SKILL.md)               | Propose a solution and wait for approval before implementing.                     |
-| [prototype](skills/general/prototype/SKILL.md)                       | Build a throwaway artifact to answer a design question.                           |
-| [repitch](skills/general/repitch/SKILL.md)                           | Re-explain a message or part of one.                                              |
-| [research](skills/general/research/SKILL.md)                         | Investigate primary sources and save findings as Markdown in the repo.            |
-| [verifying-work](skills/general/verifying-work/SKILL.md)             | Prove results, establish feedback loops, and maintain verification guidance.      |
-| [wizard](skills/general/wizard/SKILL.md)                             | Generate an interactive Bash wizard for steps only a human can perform.           |
-| [writing](skills/general/writing/SKILL.md)                           | Write and revise technical prose for humans and coding agents.                    |
+### Manually invoked
 
-#### Manually invoked
-
-| Skill                                                        | Purpose                                                                                       |
-| ------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| [dry-run](skills/general/dry-run/SKILL.md)                   | Preview a small edit as a diff and wait for approval before changing files.                   |
-| [ingest-document](skills/general/ingest-document/SKILL.md)   | Extract project-relevant proposals from a document and ask which to adopt.                    |
-| [pause-work](skills/general/pause-work/SKILL.md)             | Pause safely and save a resume checkpoint.                                                    |
-| [to-questionnaire](skills/general/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge.        |
-| [wayfinder](skills/general/wayfinder/SKILL.md)               | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
-
-### Engineering
-
-#### Model invoked
-
-| Skill                                                          | Purpose                                                                           |
-| -------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [code-review](skills/engineering/code-review/SKILL.md)         | Review changes against repository standards and the originating spec in parallel. |
-| [codebase-design](skills/engineering/codebase-design/SKILL.md) | Design deeper modules, clearer interfaces, and testable boundaries.               |
-| [diagnosing-bugs](skills/engineering/diagnosing-bugs/SKILL.md) | Diagnose bugs and performance regressions.                                        |
-| [frontend-design](skills/engineering/frontend-design/SKILL.md) | Design or reshape frontend pages, components, and interactive prototypes.         |
-| [tdd](skills/engineering/tdd/SKILL.md)                         | Build features or fix bugs with test-driven development.                          |
-
-#### Manually invoked
-
-| Skill                                                                                      | Purpose                                                                                                            |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| [implement](skills/engineering/implement/SKILL.md)                                         | Implement work from a spec or set of tickets.                                                                      |
-| [improve-codebase-architecture](skills/engineering/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice.                                |
-| [retro](skills/engineering/retro/SKILL.md)                                                 | Conduct a retrospective on a coding session.                                                                       |
-| [to-spec](skills/engineering/to-spec/SKILL.md)                                             | Synthesize the conversation into a spec and publish it to the issue tracker.                                       |
-| [to-implementation-tickets](skills/engineering/to-implementation-tickets/SKILL.md)         | Break a plan, spec, or conversation into tracer-bullet implementation tickets with explicit blocking dependencies. |
+| Skill                                                                          | Purpose                                                                                                            |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| [dry-run](skills/dry-run/SKILL.md)                                             | Preview a small edit as a diff and wait for approval before changing files.                                        |
+| [implement](skills/implement/SKILL.md)                                         | Implement work from a spec or set of tickets.                                                                      |
+| [improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice.                                |
+| [ingest-document](skills/ingest-document/SKILL.md)                             | Extract project-relevant proposals from a document and ask which to adopt.                                         |
+| [pause-work](skills/pause-work/SKILL.md)                                       | Pause safely and save a resume checkpoint.                                                                         |
+| [retro](skills/retro/SKILL.md)                                                 | Conduct a retrospective on a coding session.                                                                       |
+| [to-implementation-tickets](skills/to-implementation-tickets/SKILL.md)         | Break a plan, spec, or conversation into tracer-bullet implementation tickets with explicit blocking dependencies. |
+| [to-questionnaire](skills/to-questionnaire/SKILL.md)                           | Turn unresolved decisions into a questionnaire for someone with the missing knowledge.                             |
+| [to-spec](skills/to-spec/SKILL.md)                                             | Synthesize the conversation into a spec and publish it to the issue tracker.                                       |
+| [wayfinder](skills/wayfinder/SKILL.md)                                         | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence.                      |
 
 ## Installation
 
@@ -95,16 +81,14 @@ For installation of skills through Home Manager, pass your flake `inputs` throug
 }
 ```
 
-The directory contains every skill in nested task-domain directories. To select a specific directory, use the following pattern:
+The directory contains every skill bundle. To select individual skills, use their complete directory paths and include any skills they require:
 
 ```nix
 settings.skills = [
-  "${inputs.its-skills}/skills/general"
-  "${inputs.its-skills}/skills/engineering"
+  "${inputs.its-skills}/skills/writing"
+  "${inputs.its-skills}/skills/codebase-design"
 ];
 ```
-
-For individual skills, use complete directory paths such as `"${inputs.its-skills}/skills/general/writing"`, and include any skills they require. Selecting only a domain directory does not add dependencies from other domains.
 
 ### Installation notes
 
