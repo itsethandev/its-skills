@@ -36,7 +36,6 @@ Skills are divided into model invoked skills and manually invoked skills. The mo
 | [dry-run](skills/general/dry-run/SKILL.md)                   | Preview a small edit as a diff and wait for approval before changing files.                   |
 | [ingest-document](skills/general/ingest-document/SKILL.md)   | Extract project-relevant proposals from a document and ask which to adopt.                    |
 | [pause-work](skills/general/pause-work/SKILL.md)             | Pause safely and save a resume checkpoint.                                                    |
-| [retro](skills/general/retro/SKILL.md)                       | Conduct a retrospective on an agent session.                                                  |
 | [to-questionnaire](skills/general/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge.        |
 | [wayfinder](skills/general/wayfinder/SKILL.md)               | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
 
@@ -58,6 +57,7 @@ Skills are divided into model invoked skills and manually invoked skills. The mo
 | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | [implement](skills/engineering/implement/SKILL.md)                                         | Implement work from a spec or set of tickets.                                                                      |
 | [improve-codebase-architecture](skills/engineering/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice.                                |
+| [retro](skills/engineering/retro/SKILL.md)                                                 | Conduct a retrospective on a coding session.                                                                       |
 | [to-spec](skills/engineering/to-spec/SKILL.md)                                             | Synthesize the conversation into a spec and publish it to the issue tracker.                                       |
 | [to-implementation-tickets](skills/engineering/to-implementation-tickets/SKILL.md)         | Break a plan, spec, or conversation into tracer-bullet implementation tickets with explicit blocking dependencies. |
 
