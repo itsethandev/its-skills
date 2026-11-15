@@ -23,7 +23,6 @@ Skills are divided into model invoked skills and manually invoked skills. The mo
 | [domain-language](skills/domain-language/SKILL.md)           | Build and sharpen a project's domain language and glossary.                       |
 | [frontend-design](skills/frontend-design/SKILL.md)           | Design or reshape frontend pages, components, and interactive prototypes.         |
 | [pr](skills/pr/SKILL.md)                                     | Write a pull request body.                                                        |
-| [propose-first](skills/propose-first/SKILL.md)               | Propose a solution and wait for approval before implementing.                     |
 | [prototype](skills/prototype/SKILL.md)                       | Build a throwaway artifact to answer a design question.                           |
 | [repitch](skills/repitch/SKILL.md)                           | Re-explain a message or part of one.                                              |
 | [research](skills/research/SKILL.md)                         | Produce a cited research report from primary sources.                             |
