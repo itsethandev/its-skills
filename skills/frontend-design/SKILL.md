@@ -5,66 +5,48 @@ description: Design frontend pages, components, and interactive prototypes, or c
 
 # Frontend Design
 
-Apply this guidance to the frontend work already requested. Preserve the accepted feature scope and interaction behavior; surface consequential product questions rather than inventing answers.
+Design around the user's task, not the implementation. Preserve accepted scope and behavior; ask about consequential product decisions rather than inventing answers.
 
-Design around the user's task, not an explanation of the implementation. Use layout, hierarchy, familiar controls, and concise copy to communicate. Add explanation when it helps someone act, decide, or recover.
-
-Follow explicit user direction, then intentional project conventions and accepted decisions, then the defaults here. Look for evidence such as design-system guidance or configured components; incidental styling is not a competing convention. Preserve compatible usability and accessibility guidance when adapting a default.
+Follow user direction, then intentional project conventions and accepted decisions, then these defaults. Establish conventions from design guidance or configured components, not incidental styling. Preserve compatible usability and accessibility rules.
 
 ## Plan the screen
 
-1. Identify the audience, the main task, and the primary action. Read the relevant brief, real content, and existing UI conventions. Ask only when missing information would materially change the product behavior or design.
-2. Sort the content into essential information, secondary information needed on demand, and information to omit. Keep what users need to complete the task or understand its outcome. Do not invent sections to fill space.
-3. Make a compact design plan before writing UI code. Establish the information order, grouping, primary and secondary actions, spacing, type hierarchy, color roles, and narrow-screen behavior. Sketch a layout when it helps compare alternatives. Reuse suitable project tokens and components. Keep the plan proportional to the change and proceed within existing authority without a routine approval pause.
+1. Read the brief, real content, and UI conventions. Identify the audience, main task, and primary action. Ask only about gaps that materially affect behavior or design.
+2. Separate essential content, guidance needed on demand, and content to omit. Keep what users need to act or understand the outcome; add no filler sections.
+3. Before coding, plan information order, grouping, actions, spacing, type hierarchy, color roles, and narrow-screen behavior. Reuse suitable tokens and components; sketch alternatives when useful. Scale the plan to the change and proceed within existing authority without a routine approval pause.
 
 ## Build with restraint
 
-- Make the primary action easy to find. Group related inputs and information through proximity, alignment, and spacing before adding containers or explanatory labels.
-- Match typography, palette, density, and imagery to the audience and subject. Extend an existing product's visual language rather than redesigning it for novelty. For a new UI, choose a coherent direction instead of assembling generic cards, badges, gradients, and decorative headings.
-- Let important content carry emphasis; keep surrounding elements quiet. Add a border, card, divider, or animation only when it communicates grouping, priority, state, or a useful response to an action.
-- Keep useful density. Simplifying a working screen does not mean hiding essential controls or spreading related information across excessive whitespace.
-- Cover the interaction's relevant states, including validation, loading, success, failure, and empty results. Show feedback where the user acted. Preserve clear recovery paths and required disclosures.
+- Make the primary action obvious. Group related content through proximity, alignment, and spacing before adding containers or explanations.
+- Match type, palette, density, and imagery to the audience and subject. Extend an existing visual language; for new UI, choose a coherent direction rather than generic decoration.
+- Emphasize important content and quiet its surroundings. Borders, cards, dividers, and motion must communicate grouping, priority, state, or useful feedback.
+- Preserve useful density and essential controls; avoid excessive whitespace that separates related information.
+- Cover relevant validation, loading, success, failure, and empty states. Place feedback where the user acted; preserve recovery paths and required disclosures.
 
 ### Make text earn its place
 
-Use short, specific action labels and the user's vocabulary. Name what an action does, not how the system implements it. Keep the same action name throughout the flow.
+Use short, specific labels in the user's vocabulary. Name the action, not its implementation, consistently throughout the flow.
 
-Remove introductions that repeat a heading, descriptions of obvious controls, and notices about invisible implementation conveniences. A form that survives refresh usually needs no browser-storage explanation. If persistence affects privacy, retention, or a decision the user must make, explain that consequence rather than the storage mechanism.
+Remove introductions that repeat headings, obvious-control explanations, and notices about implementation conveniences. Routine draft persistence needs no storage explanation; explain consequences for privacy, retention, or user decisions instead.
 
-Keep secondary guidance near the relevant field or reveal it when needed. Do not hide information users need before acting, replace field labels with placeholders, or remove useful error instructions merely to reduce word count.
+Place secondary guidance near its field or reveal it on demand. Preserve information needed before acting, explicit field labels rather than placeholders alone, and useful error and recovery instructions.
 
 ### Use icons intentionally
 
-Prefer a familiar icon over text when the surrounding context makes the action clear, such as closing a dialog, returning to the preceding screen, or opening search. Keep a short label when an icon would leave the action or destination ambiguous. Do not decorate every label with an icon.
+Use familiar icons when context makes the action clear; retain short labels for ambiguous actions or destinations. Avoid decorative icons on every label.
 
-Use the project's intentional icon set; use Lucide as the fallback when available within the authorized toolchain. Do not introduce a new dependency merely to obtain an icon when a suitable existing option works. Keep icon size, stroke, alignment, and hit areas consistent. Give icon-only controls accessible names, visible keyboard focus, and adequate pointer targets. Hide decorative icons from assistive technology. A tooltip may supplement a control, but must not be its only accessible name or the only way to discover an unfamiliar action.
+Use the project's icon set, falling back to Lucide within the authorized toolchain. Reuse suitable options before adding dependencies. Keep size, stroke, alignment, and hit areas consistent. Give icon-only controls accessible names, visible keyboard focus, and adequate pointer targets; hide decorative icons from assistive technology. Tooltips may supplement controls, but cannot be their only accessible name or the only way to discover an unfamiliar action.
 
 ### Keep prototype commentary out of the UI
 
-Omit preview banners, demo disclaimers, technical notes, and lists of unfinished features unless requested or required by the product's accepted constraints. Describe limitations in the handoff or developer documentation instead.
+Omit preview banners, demo disclaimers, technical notes, and unfinished-feature lists unless requested or required by accepted product constraints. Put limitations in the handoff or developer documentation.
 
-Do not imply that a simulated action completed a real payment, delivery, or submission. Use interaction-local feedback that matches what actually happened, without adding a global disclaimer by default.
-
-### Prefer these treatments
-
-| Instead of                                                          | Prefer                                                                                                                                       |
-| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| "Back to company website (opens in a new tab)"                      | A back arrow when context makes the destination clear, or an arrow with a short destination label. Do not add a new-tab sentence by default. |
-| "Form details are stored in browser storage and persist on refresh" | No notice for routine draft persistence; retain an explanation only for a user-relevant consequence.                                         |
-| "Preview: This demo does not submit requests yet"                   | No persistent demo notice. Report the limitation in the handoff and do not claim that a real request was sent.                               |
-| "Please click the button below to save your changes"                | "Save changes" on the button.                                                                                                                |
+Keep interaction-local feedback truthful: simulated actions must not imply real payments, deliveries, or submissions. This does not require a global disclaimer.
 
 ## Inspect and simplify
 
-Inspect the rendered UI at desktop and mobile sizes with available, authorized browser tooling. Exercise the primary interaction and relevant failure states. Check hierarchy, spacing, text wrapping, overflow, keyboard navigation, contrast, focus, and reduced-motion behavior when motion is present. Inspect screenshots rather than treating compilation as evidence of visual quality.
+Render at desktop and mobile sizes with available, authorized browser tools and inspect screenshots; compilation does not establish visual quality. Exercise the primary interaction and relevant failure states. Check hierarchy, spacing, wrapping, overflow, keyboard navigation, contrast, focus, and reduced-motion behavior when motion is present. Narrow layouts must preserve the task, not merely shrink the desktop layout.
 
-Make a subtraction pass after seeing the result:
+After inspection, remove text, containers, and decoration that add no meaning; preserve essential labels, consequences, and recovery guidance. Correct clutter and interaction problems within scope, then inspect the affected result again.
 
-- Can the user identify the main task and primary action without reading an introductory paragraph?
-- Which text, notice, container, or decoration can disappear without losing meaning?
-- Would a familiar icon improve scanning without making the action ambiguous?
-- Are implementation details or unsolicited prototype commentary still visible?
-- Are essential labels, consequences, errors, and recovery instructions still clear?
-- Does the narrow layout preserve the task rather than merely shrink the desktop layout?
-
-Correct unnecessary clutter and interaction problems within scope, then inspect the affected result again. Finish when the primary task is clear and usable, every visible explanation serves a user need, and the relevant checks pass or have a specific reported limit. If rendering tools are unavailable, perform supported source checks and report visual and interaction quality as unverified; do not claim the UI was inspected.
+Finish when the primary task is clear and usable, explanations serve user needs, and checks pass or have specific reported limits. Without rendering tools, run supported source checks and report visual and interaction quality as unverified.
