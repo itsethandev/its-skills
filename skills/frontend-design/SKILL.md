@@ -1,6 +1,6 @@
 ---
 name: frontend-design
-description: Design frontend pages, components, and interactive prototypes, or reshape an existing UI. Build task-centered layouts with concise copy, familiar icons, and deliberate visual hierarchy.
+description: Design frontend pages, components, and interactive prototypes, or change an existing UI's layout, styling, or interactions. Build task-centered layouts with concise copy, familiar icons, and deliberate visual hierarchy.
 ---
 
 # Frontend Design
@@ -56,7 +56,7 @@ Do not imply that a simulated action completed a real payment, delivery, or subm
 
 ## Inspect and simplify
 
-Use `verifying-work` when executing checks. Inspect the rendered UI at desktop and mobile sizes with available, authorized browser tooling. Exercise the primary interaction and relevant failure states. Check hierarchy, spacing, text wrapping, overflow, keyboard navigation, contrast, focus, and reduced-motion behavior when motion is present. Inspect screenshots rather than treating compilation as evidence of visual quality.
+Inspect the rendered UI at desktop and mobile sizes with available, authorized browser tooling. Exercise the primary interaction and relevant failure states. Check hierarchy, spacing, text wrapping, overflow, keyboard navigation, contrast, focus, and reduced-motion behavior when motion is present. Inspect screenshots rather than treating compilation as evidence of visual quality.
 
 Make a subtraction pass after seeing the result:
 

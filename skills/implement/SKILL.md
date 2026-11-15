@@ -12,8 +12,6 @@ Call the Skill tool with "tdd" where possible, at pre-agreed seams.
 
 Run typechecking regularly, single test files regularly, and the full test suite once at the end.
 
-Before claiming completion, call the Skill tool with "verifying-work" to check the delivered behavior and artifacts and report evidence and limits.
+Once done, call the Skill tool with "code-review" to review the work.
 
-Then call the Skill tool with "code-review" to review the work. After review-driven changes, call "verifying-work" again to rerun affected checks and relevant regression checks.
-
-Commit your verified work to the current branch.
+Commit your work to the current branch.
