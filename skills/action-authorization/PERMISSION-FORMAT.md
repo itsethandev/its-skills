@@ -10,7 +10,6 @@ Start with `# Action permissions`. Give each decision a stable, unique heading a
 - **Action:** the operation or bounded class of operations.
 - **Target:** exact repositories, remotes, branches, services, accounts, hosts, or environments, or an explicitly approved target set. Avoid targets that silently change with local configuration.
 - **Constraints:** limits on methods, effects, data, resources, cost, and prerequisites, including relevant exclusions. Use `None` only for explicitly approved unconstrained scope.
-- **User decision:** date and concise account of the explicit decision; include a conversation/decision reference if available. Omit credentials and sensitive payloads; invent no references.
 
 Use separate records for different scopes. Clarify underspecified or conflicting records with the user rather than infer permission.
 
@@ -27,7 +26,6 @@ Illustrative only; record only scopes the user actually approved.
 - **Action:** Push completed, verified commits.
 - **Target:** Remote `origin` in this repository; branches under `feature/`.
 - **Constraints:** Normal pushes only. Excludes default-branch changes, force-pushes, and pushes that trigger deployments.
-- **User decision:** YYYY-MM-DD — User explicitly granted standing permission for these pushes.
 ```
 
 ## Update active records
