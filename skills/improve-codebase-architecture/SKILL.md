@@ -63,7 +63,7 @@ Do NOT propose interfaces yet. After the file is written, ask the user: "Which o
 
 Once the user picks a candidate, call the Skill tool with "alignment" to walk the decision tree with them: constraints, dependencies, the shape of the deepened module, what sits behind the seam, what tests survive.
 
-Call the Skill tool with "domain-language" to resolve and record terms, and with "decision-records" when offering or recording a consequential decision. Apply that guidance as decisions crystallize:
+Side effects happen inline as decisions crystallize; call the Skill tool with "domain-language" and "decision-records" to keep the domain model current as you go:
 
 - **Naming a deepened module after a concept not in `GLOSSARY.md`?** Add the term to `GLOSSARY.md`. Create the file lazily if it doesn't exist.
 - **Sharpening a fuzzy term during the conversation?** Update `GLOSSARY.md` right there.
