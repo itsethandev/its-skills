@@ -1,6 +1,6 @@
 # Provenance: retro
 
-**Classification: Copied.** The skill is byte-identical to Matt Pocock's upstream retrospective skill.
+**Classification: Adapted.** Matt Pocock's retrospective skill with writing guidance references retargeted to the local `writing` skill and its agent-writing reference.
 
 ## License scope
 
@@ -12,8 +12,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source                                                                                                                                                            | Evidence and changes                                                    |
-| ---------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
-| `SKILL.md` | Copied         | [Matt Pocock: `skills/engineering/retro/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md) | Byte-identical, including the upstream `writing-for-agents` references. |
+| Local file | Classification | Pinned source                                                                                                                                                            | Evidence and changes                                                                                                                        |
+| ---------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SKILL.md` | Adapted        | [Matt Pocock: `skills/engineering/retro/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md) | Writing guidance references retargeted to the local `writing` skill and its agent-writing reference; the retrospective method is unchanged. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.
