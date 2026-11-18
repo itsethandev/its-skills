@@ -35,6 +35,7 @@ Skills are divided into model invoked skills and manually invoked skills. The mo
 | Skill                                                                          | Purpose                                                                                                            |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | [implement](skills/implement/SKILL.md)                                         | Implement work from a spec or set of tickets.                                                                      |
+| [implement-spec](skills/implement-spec/SKILL.md)                               | Implement a spec's ticket graph on one integration branch using parallel subagents.                                |
 | [improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice.                                |
 | [pause-work](skills/pause-work/SKILL.md)                                       | Pause safely and save a resume checkpoint.                                                                         |
 | [retro](skills/retro/SKILL.md)                                                 | Conduct a retrospective on a coding session.                                                                       |
