@@ -49,7 +49,7 @@ Every material effect must be covered. Standing permissions can cover deployment
 
 For missing permission, describe the action, target, effects, risks, and constraints; offer the four decisions above with concrete scopes. "Yes" to one operation means allow once. Resolve unclear scope or duration before acting. Only explicit user decisions change permissions; keep proposals outside active records.
 
-- Record denials and standing permissions in the permission file without another confirmation. Create it on the first durable decision, ensuring root `.gitignore` covers `.local/**`. Leave defaults here.
+- Before drafting or updating a durable permission record, load the `writing` skill. Record denials and standing permissions in the permission file without another confirmation. Create it on the first durable decision, ensuring root `.gitignore` covers `.local/**`. Leave defaults here.
 - Keep once/session grants, bounds, and consumption in conversation only, not saved documentation. Ask again if that state is lost or uncertain.
 
 ## 4. Act within permission

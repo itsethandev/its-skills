@@ -5,7 +5,7 @@ description: Plan, draft, revise, or review durable technical prose for humans o
 
 # Writing
 
-Write for the artifact's eventual reader, not the conversation that produced it. State the chosen conventions, decisions, status, and requirements directly, including in drafts presented in chat. Remove planning residue: rejected alternatives, reminders of debates, and caveats that require the conversation to make sense. Keep rationale when it helps future decisions.
+Write for the artifact's eventual reader. State the chosen conventions, decisions, status, and requirements directly, including in drafts presented in chat.
 
 Give each rule, convention, or procedure one authoritative home with a recognizable purpose. Link to it where readers need it, so they can find the guidance without already knowing where it lives. Maintain the guidance in its owning document rather than repeat it elsewhere.
 
@@ -20,3 +20,7 @@ Make human-facing documents stand on their own. Keep agent-specific instructions
 - For prose that people read, including documentation, READMEs, RFCs, ADRs, PR descriptions, and commit messages, read [human-writing.md](human-writing.md).
 - For instructions that coding agents consume, including `AGENTS.md`, `CLAUDE.md`, prompts, and skills, read [agent-writing.md](agent-writing.md).
   Load one reference for a single-audience artifact. Load both references for a mixed-audience artifact.
+
+## Cold-read check
+
+Before delivering a draft or saving an edit, review the changed prose as a reader who never saw the conversation. For each clause, ask what that reader would understand or do differently without it. Cut planning residue: text whose only purpose is to respond to the conversation that produced the draft. Keep the conditions, exceptions, and rationale the reader needs to use the artifact.
