@@ -112,7 +112,7 @@ gh issue edit NUMBER --repo ItsEthanDev/its-skills --add-assignee DEVELOPER_LOGI
 ```
 
 Required remote labels are the five implementation labels and the five
-`wayfinder:` labels documented here. Setup does not create them.
+`wayfinder:` labels documented here.
 
 ## Verification limits
 

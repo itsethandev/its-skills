@@ -9,7 +9,6 @@ import sys
 
 
 CLASSIFICATIONS = {"Copied", "Adapted", "Inspired", "Original"}
-TASK_DOMAINS = {"general", "engineering", "learning"}
 LINK = re.compile(r"\[(`?)([a-z0-9]+(?:-[a-z0-9]+)*)\1\]\(([^\s)]+)\)")
 
 
@@ -101,9 +100,9 @@ def check_repo(root):
         if not path.is_file():
             continue
         relative = path.relative_to(root)
-        if len(relative.parts) != 4 or relative.parts[1] not in TASK_DOMAINS:
+        if len(relative.parts) != 3:
             errors.append(
-                f"{relative}: expected skills/<general|engineering|learning>/<skill>/SKILL.md"
+                f"{relative}: expected skills/<skill>/SKILL.md"
             )
             continue
         name = path.parent.name
@@ -114,7 +113,7 @@ def check_repo(root):
             continue
         skills[name] = relative.parent
     if not skills:
-        errors.append("skills/: no skills found (expected skills/<domain>/<skill>/SKILL.md)")
+        errors.append("skills/: no skills found (expected skills/<skill>/SKILL.md)")
     for name in sorted(skills):
         for required in ("LICENSE", "PROVENANCE.md"):
             path = skills[name] / required
